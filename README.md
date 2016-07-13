@@ -6,17 +6,6 @@ Works with "Basic HTTP Authentication". All responses are in JSON format.
 
 ```curl -u "username:passw0rd" http://todo-api.dev/v1/lists```
 
-##HTTP Response codes
-
-- 200: The request was successful.
-- 201: The resource was successfully created.
-- 204: The request was successful, but we did not send any content back.
-- 400: The request failed due to an application error, such as a validation error.
-- 401: An API key was either not sent or invalid.
-- 403: The resource does not belong to the authenticated user and is forbidden.
-- 404: The resource was not found.
-- 500: A server error occurred.
-
 ##API Endpoints
 
 ###GET /v1/lists
@@ -78,3 +67,14 @@ Parameters:
 ###DELETE /v1/lists/{id}/tasks/{taskid}
 
 Deletes the task with given ID. Returns HTTP.204 if successful.
+
+##HTTP Response codes
+
+- 200: The request was successful.
+- 201: The resource was successfully created.
+- 204: The request was successful, but we did not send any content back.
+- 400: The request failed due to an application error, such as a validation error.
+- 401: An API key was either not sent or invalid.
+- 403: The resource does not belong to the authenticated user and is forbidden.
+- 404: The resource was not found.
+- 500: A server error occurred.
