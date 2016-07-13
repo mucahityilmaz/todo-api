@@ -1,4 +1,4 @@
-#Todo list REST API built with Laravel
+#TODO List REST API built with Laravel
 
 Works with "Basic HTTP Authentication". All responses are in JSON format.
 
